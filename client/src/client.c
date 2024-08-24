@@ -65,7 +65,7 @@ int main(void)
 t_log* iniciar_logger(void)
 {
 	t_log* nuevo_logger;
-	nuevo_logger = log_create("/home/utnso/Desktop/tp0/tp0.log", "Logger TP0", true, LOG_LEVEL_INFO);
+	nuevo_logger = log_create("tp0.log", "Logger TP0", true, LOG_LEVEL_INFO);
 	if(nuevo_logger == NULL){
 		perror("Error al crear el logger");
 		exit(EXIT_FAILURE);
